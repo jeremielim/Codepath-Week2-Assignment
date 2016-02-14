@@ -148,6 +148,14 @@ class SignInViewController: UIViewController, UIScrollViewDelegate {
         }
         
     }
+    
+    @IBAction func didPressBack(sender: AnyObject) {
+        
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
