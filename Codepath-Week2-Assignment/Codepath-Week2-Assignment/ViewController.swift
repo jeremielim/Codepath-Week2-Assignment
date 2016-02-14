@@ -11,20 +11,22 @@ import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
    
     @IBOutlet weak var introScrollView: UIScrollView!
-    @IBOutlet weak var introTile1: UIImageView!
+    @IBOutlet weak var tile1View: UIImageView!
+    @IBOutlet weak var tile2View: UIImageView!
+    @IBOutlet weak var tile3View: UIImageView!
+    @IBOutlet weak var tile4View: UIImageView!
+    @IBOutlet weak var tile5View: UIImageView!
+    @IBOutlet weak var tile6View: UIImageView!
     
-    var introTile1InitY: CGFloat!
-    var introTile1Offset: CGFloat!
-    
+    var yOffsets: [CGFloat] = [-285, -240, -415, -408, -480, -500]
+    var xOffsets: [CGFloat] = [-30, 75, -66, 10, -200, -15]
+    var scales: [CGFloat] = [1, 1.65, 1.7, 1.6, 1.65, 1.65]
+    var rotations: [CGFloat] = [-10, -10, 10, 10, 10, -10]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        introTile1InitY = introTile1.frame.origin.y
-        introTile1Offset = -400
-        
-        introTile1.frame.origin.y = introTile1InitY + introTile1Offset
-        
+
         // Do any additional setup after loading the view, typically from a nib.
         introScrollView.delegate = self
         
@@ -39,25 +41,40 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        // This method is called as the user scrolls
         
-        print(introScrollView.contentOffset.y)
+        // Offset 0 -> 568
+        // xoffset -30 -> 0
+        // yoffest -285 -> 0
+        
+        let photos: [UIImageView] = [tile1View, tile2View, tile3View, tile4View, tile5View, tile6View]
+        
+        let offset = CGFloat(scrollView.contentOffset.y)
+        
+        for photo in 0...5 {
+            movePhoto(offset, curXOffset: xOffsets[photo], curYOffset: yOffsets[photo], curScale: scales[photo], curRotation: rotations[photo], curTile: photos[photo])
+        }
+        
+        
 
     }
     
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    func movePhoto(offset: CGFloat, curXOffset: CGFloat, curYOffset: CGFloat, curScale: CGFloat, curRotation: CGFloat, curTile:UIImageView) {
         
+        // Offset 0 -> 568
+        // xoffset -30 -> 0
+        // yoffest -285 -> 0
+        
+        let tx = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: curXOffset, r2Max: 0)
+        
+        let ty = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: curYOffset, r2Max: 0)
+        let scale = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: curScale, r2Max: 1)
+        let rotation = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: curRotation, r2Max: 0)
+        
+        curTile.transform = CGAffineTransformMakeTranslation(tx, ty)
+        curTile.transform = CGAffineTransformScale(curTile.transform, scale, scale)
+        curTile.transform = CGAffineTransformRotate(curTile.transform, CGFloat(rotation) * CGFloat(M_PI) / 180.0)
     }
-    
-    func scrollViewDidEndDragging(scrollView: UIScrollView,
-        willDecelerate decelerate: Bool) {
-            // This method is called right as the user lifts their finger
-    }
-    
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        // This method is called when the scrollview finally stops scrolling.
-    }
-
+ 
 
 
 }

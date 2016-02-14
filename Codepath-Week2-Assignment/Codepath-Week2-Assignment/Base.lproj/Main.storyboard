@@ -29,7 +29,7 @@
                                         </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="t00-dB-cIP">
-                                        <rect key="frame" x="45" y="749" width="153" height="152"/>
+                                        <rect key="frame" x="45" y="750" width="153" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile2" id="bDX-nn-OhX">
@@ -69,7 +69,12 @@
                     <size key="freeformSize" width="320" height="1136"/>
                     <connections>
                         <outlet property="introScrollView" destination="OsQ-sC-gJr" id="aKZ-6m-pri"/>
-                        <outlet property="introTile1" destination="t00-dB-cIP" id="DCX-fg-2k2"/>
+                        <outlet property="tile1View" destination="t00-dB-cIP" id="bP9-kr-oro"/>
+                        <outlet property="tile2View" destination="bDX-nn-OhX" id="9X4-8n-JoV"/>
+                        <outlet property="tile3View" destination="tkM-Vm-vGL" id="WJV-Lf-6rq"/>
+                        <outlet property="tile4View" destination="E5p-Pw-3Ub" id="1VU-Pq-cFn"/>
+                        <outlet property="tile5View" destination="cfM-V6-XgD" id="Pb1-kb-4mT"/>
+                        <outlet property="tile6View" destination="h2h-e2-hOd" id="WC7-89-0ZW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
