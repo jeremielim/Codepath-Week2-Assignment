@@ -16,6 +16,8 @@
 		D0608C261C6B031900516B13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0608C251C6B031900516B13 /* LoginViewController.swift */; };
 		D06F4FED1C7046640053E580 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F4FEC1C7046640053E580 /* CreateViewController.swift */; };
 		D06F4FEF1C7056A20053E580 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F4FEE1C7056A20053E580 /* TermsViewController.swift */; };
+		D06F4FF11C71535F0053E580 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F4FF01C71535F0053E580 /* PhotosViewController.swift */; };
+		D06F4FF31C71596A0053E580 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F4FF21C71596A0053E580 /* GetStartedViewController.swift */; };
 		D0749E601C69259A00242795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0749E5F1C69259A00242795 /* AppDelegate.swift */; };
 		D0749E621C69259A00242795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0749E611C69259A00242795 /* ViewController.swift */; };
 		D0749E651C69259A00242795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0749E631C69259A00242795 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		D0608C251C6B031900516B13 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D06F4FEC1C7046640053E580 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		D06F4FEE1C7056A20053E580 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		D06F4FF01C71535F0053E580 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		D06F4FF21C71596A0053E580 /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		D0749E5C1C69259A00242795 /* Codepath-Week2-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codepath-Week2-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0749E5F1C69259A00242795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0749E611C69259A00242795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				D01BCA131C7038ED00A9661D /* TimelineViewController.swift */,
 				D06F4FEC1C7046640053E580 /* CreateViewController.swift */,
 				D06F4FEE1C7056A20053E580 /* TermsViewController.swift */,
+				D06F4FF01C71535F0053E580 /* PhotosViewController.swift */,
+				D06F4FF21C71596A0053E580 /* GetStartedViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -132,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				D0749E5F1C69259A00242795 /* AppDelegate.swift */,
+				D0608C231C6B012700516B13 /* Common.swift */,
 				D0749E631C69259A00242795 /* Main.storyboard */,
 				D0608C271C6B031D00516B13 /* View Controllers */,
-				D0608C231C6B012700516B13 /* Common.swift */,
 				D0749E661C69259A00242795 /* Assets.xcassets */,
 				D0749E681C69259A00242795 /* LaunchScreen.storyboard */,
 				D0749E6B1C69259A00242795 /* Info.plist */,
@@ -291,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06F4FF31C71596A0053E580 /* GetStartedViewController.swift in Sources */,
 				D06F4FEF1C7056A20053E580 /* TermsViewController.swift in Sources */,
 				D06F4FED1C7046640053E580 /* CreateViewController.swift in Sources */,
 				D0608C261C6B031900516B13 /* LoginViewController.swift in Sources */,
@@ -300,6 +307,7 @@
 				D005EE1C1C6D584E00DC3FA3 /* SignInViewController.swift in Sources */,
 				D01BCA141C7038ED00A9661D /* TimelineViewController.swift in Sources */,
 				D01BCA0E1C7009D300A9661D /* TutorialViewController.swift in Sources */,
+				D06F4FF11C71535F0053E580 /* PhotosViewController.swift in Sources */,
 				D0749E601C69259A00242795 /* AppDelegate.swift in Sources */,
 				D01BCA121C70383B00A9661D /* SettingsViewController.swift in Sources */,
 			);

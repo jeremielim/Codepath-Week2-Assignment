@@ -133,7 +133,7 @@ class SignInViewController: UIViewController, UIScrollViewDelegate {
             signInLoader.startAnimating()
         
             delay(2, closure: { () -> () in
-                if self.emailTextField.text == "hello@jeremiespoken.com" && self.passwordTextField.text == "password" {
+                if self.emailTextField.text == "hello@you.com" && self.passwordTextField.text == "hello" {
                     
                     self.signInLoader.stopAnimating()
                     self.performSegueWithIdentifier("TutorialViewcontrollerSegue", sender: self)
