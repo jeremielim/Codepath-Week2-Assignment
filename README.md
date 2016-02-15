@@ -1,7 +1,7 @@
 # Codepath-Week2-Assignment
 Recreate the Carousel application
 
-![Carousel](https://raw.githubusercontent.com/jeremiespoken/Codepath-Week2-Assignment/master/carousel.gif)
+![Carousel](https://github.com/jeremiespoken/Codepath-Week2-Assignment/raw/master/codepath-week2-assignment.gif)
 
 ## Time Spent 
 18 Hours
