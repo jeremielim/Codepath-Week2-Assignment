@@ -17,24 +17,29 @@ Recreate the Carousel application
 	- ✔︎ If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
 - ✔︎ When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
 - ✔︎ On appear, scale the form up and fade it in.
+
 ### ✔︎ Create a Dropbox
 - ✔︎ Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
 - ✔︎ Tapping the Agree to Terms checkbox selects the checkbox.
 - ✔︎ Tapping on Terms shows a webview with the terms.
 - ✔︎ User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
+
 ### ✔︎ Tutorial Screens
 - ✔︎ User can page between the screens
 - ✔︎ User can page between the screens with updated dots
 - ✔︎ Upon reaching the 4th page, hide the dots and show the ”Take Carousel for a Spin" button.
+
 ### ✔︎ Image Timeline
 - ✔︎ Display a scrollable view of images.
 User can tap on the conversations button to see the conversations screen (push).
 - ✔︎ User can tap on the profile image to see the settings view (modal from below).
 Conversations
 - ✔︎ User can dismiss the conversations screen
+
 ### ✔︎ Settings
 - ✔︎ User can dismiss the settings screen.
 - ✔︎ User can log out
+
 ### ✔︎ Learn more about Carousel
 - ✔︎ Show the "Learn more about Carousel" button in the photo timeline.
 - ✔︎ Tap the X to dismiss the banner
