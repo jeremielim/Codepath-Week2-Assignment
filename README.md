@@ -9,6 +9,7 @@ Recreate the Carousel application
 ## Stories
 ### ✔︎ Static photo tiles on the initial screen
 - ✔︎ Photo tiles move with scrolling
+
 ### ✔︎ Sign In
 - ✔︎ Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
 - ✔︎ Upon tapping the Sign In button.
